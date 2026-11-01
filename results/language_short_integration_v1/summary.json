@@ -1,0 +1,221 @@
+{
+  "protocol": {
+    "cases": [
+      {
+        "id": "standard_ab",
+        "route": [
+          "A",
+          "B"
+        ],
+        "profile": "standard",
+        "scenario": "standard"
+      },
+      {
+        "id": "clarification_ac",
+        "route": [
+          "A",
+          "C"
+        ],
+        "profile": "careful",
+        "scenario": "standard"
+      },
+      {
+        "id": "standard_ba",
+        "route": [
+          "B",
+          "A"
+        ],
+        "profile": "standard",
+        "scenario": "standard"
+      },
+      {
+        "id": "time_bc",
+        "route": [
+          "B",
+          "C"
+        ],
+        "profile": "time_priority",
+        "scenario": "standard"
+      },
+      {
+        "id": "time_ca",
+        "route": [
+          "C",
+          "A"
+        ],
+        "profile": "time_priority",
+        "scenario": "standard"
+      },
+      {
+        "id": "slippery_cb",
+        "route": [
+          "C",
+          "B"
+        ],
+        "profile": "careful",
+        "scenario": "slippery"
+      },
+      {
+        "id": "predictive_ab",
+        "route": [
+          "A",
+          "B"
+        ],
+        "profile": "time_priority",
+        "scenario": "slippery"
+      }
+    ],
+    "sources": {
+      "scripts/fixed_transport_sweep.py": "f596926e0dd47a54339f55da6b2261a14c0b02dd8030e74376bd0e233f68614d",
+      "scripts/compare_route_control.py": "ca07c086fb3be661cfce48dcb8e86bab1e4f7c915e438bb95ea47ad0af9aa2f9",
+      "scripts/run_factory_route.py": "63bf58fd34ba522bd6332943fe0fe02fbc53cc37b8a182ef90362459ad2c86cc",
+      "scripts/run_stepped_route.py": "22a15d61dccf8f7b566e79d313129a5e7c1449d3852fc4137ebcb5fdec37bab1",
+      "scripts/factory_field.py": "9bd23522709f9631bbf1facaecb69655e07eda067cc4d65243e88ca8618284cf",
+      "scripts/pretrain_cargo.py": "9d21b773fd8616f93706f842ef3b1ecfa8065e4b042ccbd9dd824500a4f0fdc1",
+      "scripts/run_accel_sweep.py": "d3dbcd0a401fd5f6686f947d43f8e48429902923d6fe9e48323f92709487f3c1",
+      "tools/gazebo_stepper.cc": "ade54ca82ee79277e7e8a7e1e382c2e58218cd572b7a4b9582881b088fe4010d",
+      "worlds/cargo_contact_fixed.world": "ca4afe2d4502cf8be5f95d9fff49fca9a4c0b4ff16302f9c787550e52f340307",
+      "configs/factory_field.json": "839553882ed854f645ae410d2a2da4ddcff7f76a37ec8b6d0dfda60354091d20",
+      "scripts/adaptive_transport_pilot.py": "99442faeb397b9f2257e08ec9be3b83407bdf62ab498dde72a616eb2a2743b3f",
+      "scripts/train_route_predictor.py": "564fa7830772161d8bb6c3831d377f786adf7a7b60d9ad65f4f0c442e37f8df9",
+      "scripts/prepare_route_predictor_data.py": "350b777200c391369aabf05ad1678261a7fbefae14031403403325d40651be7b",
+      "scripts/startup_speed_study.py": "646b2561ba52c580d2921fced2c34a6f5689468df25fb923aa01d58b20027a61",
+      "scripts/route_control_ablation.py": "ae71ebdb870e9c344806c2ce9bbf4fa1cbf5bca87fadefd5480a40e5734b7cbb",
+      "scripts/boundary_learning.py": "8f6166a2fbc64e80cac7b3257a2e30f17a616aad44e99bbecd8ded14507f077c",
+      "scripts/learning_control_comparison.py": "21ec7bd4a903be34e60f5c6f5645fc9b767659e073f0838ff10f68975020fea5",
+      "scripts/reactive_hold_study.py": "bef2b5747a66de9bf891e12b80a10e1044926872c1e91a186536e784be160cef",
+      "scripts/recovery_prediction_study_v3.py": "f5f97a4a39deabc9d30ae64142b91e218e872bff939aeb732f13fb44d27792f6",
+      "scripts/experience_control_study.py": "b9179f133a9ee1f1a99ceecd142679331496b0e1517eceba31f778fc670dcd13",
+      "scripts/cargo_experience.py": "326c77b2678f73b1c1d46b5ae17f11174175138cecb0be49edbb44c9f656bbb3",
+      "scripts/train_experience_predictor.py": "f39243a662fffdc73ee23327686e017b88771bf2611137f95fe075d7660b4dd6",
+      "scripts/mission_dialogue.py": "4484670c6ff27f007310f1f8783775084180ce4d3bb532d4a7f6ccab547144b8",
+      "scripts/mission_language_backend.py": "deddbe53ebd391fca9071906c78afd5f4d121040c7b8ad67499e394d3389e2c3",
+      "scripts/mission_ollama_backend.py": "d6b008e91514e665ef4090925f5e7c5f516c140421085963d855c92496c690e4",
+      "scripts/mission_execution.py": "70c8170f026a6535795be08683bfdc3b1c346a39b6f5b073e1f234b91583451c",
+      "scripts/run_language_mission.py": "429b6728850fd92b087032ae6f72426c02bb97c1df552ba8ecbd148464e0e923",
+      "scripts/run_cargo_demo.py": "80db879aa844132bb2a77f6ecb915bbcc7d4e654abbe36b66f59971ce9c1d9f3",
+      "configs/mission_language.json": "794ee9f5e6bd4cbbfa26697eba614bddc8455344ead1cd6d3daa44f9bb8965e6",
+      "scripts/verify_language_missions.py": "a9aebf606870c1e37afffbe724bb17933ea84f35a8b42dfe3c292470966c6df9",
+      "examples/missions/standard_ab.json": "298f11f9c99bb09c3de5201fa44b84188993dc4d15c8be7d025c56eca5022018",
+      "examples/missions/clarification_ac.json": "3b8be8b9a2d13db0b68c67a8ed1343cbcdfda35c26b6ffa41c6b7aaa92c0e5b6",
+      "examples/missions/standard_ba.json": "58ff80caff482b2fbc155a55347bfad15810ecebf49e5b9af55d3d21499055e7",
+      "examples/missions/time_bc.json": "040c6a3ae7d8bd22925cbb991097d478f8ad08f32015ba10ff803eb622d3fda1",
+      "examples/missions/time_ca.json": "7949e19b840297bb03752941a866a3f35030f8e9e7e761b86185233318f8687d",
+      "examples/missions/slippery_cb.json": "ab9ac8ba6e8b25d5ddddd960cf6e792c04535e57b3547be665fcbca8fd68e387",
+      "examples/missions/predictive_ab.json": "4fd0b62f172c8fba17f75436a7d189965d0f3b32e0009639c22fee9b00888fcc"
+    },
+    "controller": "short_model",
+    "model_variant": "short",
+    "model_sha256": "9c45577398441aea47cfa68e4fb04049f498fcaa1364206a30b65d304021b36e",
+    "interpretation_backend": "rules",
+    "live_llm_tested": false,
+    "purpose": "CLI dialogue -> persistent slots -> validated profile -> route/world -> Gazebo. Not an LLM language-quality benchmark or a delivery safety guarantee."
+  },
+  "trials": [
+    {
+      "case": "standard_ab",
+      "route": "A->B",
+      "profile": "standard",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 0.4658886482740234,
+      "time_s": 26.35,
+      "safe_arrival": true,
+      "model_used": false,
+      "model_decisions": 0,
+      "samples_sha256": "1134410d5937b3e6064fae3548f7dd03999b7a2037060404f89f177831c81984"
+    },
+    {
+      "case": "clarification_ac",
+      "route": "A->C",
+      "profile": "careful",
+      "dialogue_turns": 5,
+      "status": "goal_reached",
+      "max_slip_mm": 0.30059441085160965,
+      "time_s": 31.35,
+      "safe_arrival": true,
+      "model_used": false,
+      "model_decisions": 0,
+      "samples_sha256": "7ee7d45af850b7247bbd0ad6d83b8d832982b8ba87deaffe4c45ae5de58b2395"
+    },
+    {
+      "case": "standard_ba",
+      "route": "B->A",
+      "profile": "standard",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 0.4176147296299013,
+      "time_s": 26.35,
+      "safe_arrival": true,
+      "model_used": true,
+      "model_decisions": 2,
+      "samples_sha256": "96dbf2a805253b7cd8e2106508e4478b8dd6cf26f77915e233f34dc96e4d7169"
+    },
+    {
+      "case": "time_bc",
+      "route": "B->C",
+      "profile": "time_priority",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 0.6399508291881281,
+      "time_s": 16.6,
+      "safe_arrival": true,
+      "model_used": true,
+      "model_decisions": 10,
+      "samples_sha256": "2a0f86d26f34961141d437af0619457000442cebf92fa4ce6770d8b113c9ceaf"
+    },
+    {
+      "case": "time_ca",
+      "route": "C->A",
+      "profile": "time_priority",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 0.6754529742112239,
+      "time_s": 25.9,
+      "safe_arrival": true,
+      "model_used": true,
+      "model_decisions": 10,
+      "samples_sha256": "2733d708f9f794ccf600636bca1aeac1894dcb5f1b57e39c5cba8bf54b485be0"
+    },
+    {
+      "case": "slippery_cb",
+      "route": "C->B",
+      "profile": "careful",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 1.0266910109894474,
+      "time_s": 17.65,
+      "safe_arrival": true,
+      "model_used": false,
+      "model_decisions": 0,
+      "samples_sha256": "0997da8137a30c33adcf2633ab56c7797fbe228746960c37f59d670d65f9ff70"
+    },
+    {
+      "case": "predictive_ab",
+      "route": "A->B",
+      "profile": "time_priority",
+      "dialogue_turns": 1,
+      "status": "goal_reached",
+      "max_slip_mm": 3.2352000136997705,
+      "time_s": 25.8,
+      "safe_arrival": true,
+      "model_used": true,
+      "model_decisions": 15,
+      "samples_sha256": "a4f01a97784f61f3b3215defde1eb48e812ba998ccbf9de4709c59e1d8280eb0"
+    }
+  ],
+  "audit": {
+    "passed": true,
+    "cases": 7,
+    "samples_checked": 3407,
+    "all_ordered_station_pairs": true,
+    "profile_limits_checked": true,
+    "source_hashes_checked": true,
+    "short_model_checked": true,
+    "all_commands_replayed": true,
+    "obstacle_contacts": 0,
+    "lcp_errors": 0,
+    "live_openai_tested": false
+  },
+  "warning": "Seven integration cases use explicit offline rules, not live LLM extraction. They do not validate all language inputs, geometries or delivery settings. Stopped trials remain in results; no safety guarantee."
+}

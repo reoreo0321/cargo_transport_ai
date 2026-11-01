@@ -1,0 +1,535 @@
+{
+  "passed": true,
+  "original_commit": "4bdb358",
+  "prediction_windows": 6342,
+  "max_prediction_error": 0.0,
+  "episodes": 87,
+  "commands_replayed": 41405,
+  "max_command_error": 7.327471962526033e-15,
+  "records": [
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "e068460235f7882c073331cebda8ad0a30dde360eb27b46f1dab8ae4a75185a8"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "56e5e1533b9e0e44d7b7754dfa80722ba94bf353ef4bc6d23952598181b3f60c"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "e175dec18707996387cfdf0799abf23ffc7c36cc57f14d45eaf14491e99a2aa7"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "2348306ab67e261735b775326c7f87686399c533c5489e11fdb1f61fd7c81a9f"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "68eca4c8192c4342c191fac842cc1a69e49dbe6ae6a5b051181d32f665bcd170"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "c26af38003222ec936f16a131dd23a8d0d977bdc5a8a51649de6d18b5d92f5c7"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "817c73e27996759efac8b7e2167c0012dbd6701c3a56a032dc9615b3d12ad79a"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "76e501f2d5cc0d4433b448005741063bc3e60c7db9142f63fa17f0d6e0b52d82"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "a0edd489c4ac47b5bea4786c96aeeb325658e34915510b14b0ecdaa60a33e05a"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "46338c9e0ee3e3e73124e8371b0a66a04acba7ee8dc1f3d38c872e98624a6891"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "ee66de2ca4610565e7f30a70846ccabb963c865200ea8e92efab235490654133"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_1/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "8458254de27f63365f12ce7412fb6bc0c354fc93a01d2483361cd48fa46692a5"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "d45b9e2f2d001b15ff6e77651071ba75a907d4282df3520c425def3cc3ffc9e6"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "aebd9a0e6c33148d6cecc1cd1b1e93a7adef75089094e08c0f9e5598eff7b77c"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "baa82d93f1f6a1ae03b7cc3c7b612fba8a2f12ad0e8a7ed2483e665c45d7e251"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "b9dd174c90e5fe70959d791a87172e8d8d7eb110b06e8f872255c5ded3920d11"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "50f56bf14c87b74b2f25f580f17e52c28fa12532278eb31213840d1fce8de81b"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "ebd20a77d4a83d7bbb69c834719fdbe3af7736516f36e6ebd38bb3b15e7c348d"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "e00ff8b4200f31f1760ae432cf36c48a753c3c08448e3bb71eb290842f94cfb5"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "ab7f935f6b5f09de4ff5c9be30efdd704fbec0cb4e60ccc1bd3d5c826e0e1803"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "bbcb13ba55af5c06f3e441b8e5fa0a65970fc741b954208efecf7eed61a468d0"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "72e094862e390e5e91834a88ea816e9eff208f87f0c7b37e3a6529a364960cff"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "84e58abd58366e04d59564e575b784c7227c46b50a52801de056910d72e161af"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/other_seed_2/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "72cd1714a2dacfba2f2345d2fd994627336aea40e9ac7dd3abea3874b8dfc554"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "e046565ab5dcabb81941d12b492f9b7e4744e91b7d70fe45ef0cb9f50300270b"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "0bafd2dcdadc7f700a21e05e792987580610e191a8bfbd9e3d8fec18921c9d82"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "cd2229419c6371a3f01c0fbb5dc2d09b9bc0cfcd444551261d86e5b53b8031ec"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "dd726db5161c1bcc41a0645bf47dbbda6e10f9df2fc031862ae198cbafd758cd"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "d05c87435dbe1772947e7f69e4c05d94753aa0af476f3e27080628aae84c48e3"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "c785b9fea27d270111be8b651ade483ad216c56df2d88e6c3c4b9a4eab87ef9c"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "724947ff02bbdc555df05932ea77ffc8cd9bf74e6bbe5b22591e8e7b59ef4768"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "3e9f99362a4626d0e01f9e11220f1b4c4971f37906929617d922da3512e8e6b4"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "5b305f466c866bf5835bd310fa6ac65abf50b73c4060a1ecf4febf7f10ee5d09"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "8a5fc2b264bc9dd40cec8c26215839a893bf305f54ecc68310d08e249928ec46"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "2f46b913e84b63220ddc0b431e324a39975efd38480a99569d57937ff98b2843"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_1/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "993613285467ddf1e58dbe63dbbcc4a2c4bd4d3578ad5989ee46017333be153d"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "f32a74e509684d1881c650ab3c51b13f5228750fe4163a1ee21c4e282dfb7662"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "812264aceaccffafeb27f1602f9b445fca5e8b10620a6c11240a4a07933cd389"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "5787e2998c2b42c06109fa7b0d843ab44a3c6db1ab6c623fe7011118852c22cc"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "703972827141a7c4fe6d35be7f3850116b11d4358f8a95ea4ea1170d0522094f"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "67822cea6d2cf62326eb1d752f2c2b00c7ce48afbe46bd2cd7ffdf623347630b"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "3f5bb58da3a068b4895c0d9933e67451f6daaf7934f8e74ae36aabc744e31a5a"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "2bb51990b0096ed08b2ac42c1354d02a73a08b6ae4bebe5d53bfab153facb16d"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "bdaf340a48894688603de0d718c72a414e104a37cb705dfe17ebd47cebd114a7"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "9556d411fd5c764434539ae9748458f806cf5dbf8d3caaa6662f98f4d9f0a1ba"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "a3ba6255fa63343d034802f9e32fc0bb1be73792cb15663873094dac16a69cf7"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "ed4f604cdf0826d5a259418fb17dcde31b04542fe1d9d1a8244d3d3fb92d9733"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_2/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "fc3066a4445bbbb85a38d3c2aaef61ef90b4e8fa89e8553b56923e8154914dec"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "9eabddd570f67dc8ce9ebb995a40a503020c135c458b18b2f39f2e1d5244271f"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "26c8e0da040295643623f81cf5a331f95d6f11d27dfdb8b7ea11e80f99d6ca2a"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "82122547c8a45c15f81188cf12f6eadad7132a8b06320264d7adaaeeec53c82f"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "f9f503f92edfe6ef218c52ba94cb42eec883aecc35b86019819b3bd64513d6c6"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "a768a412f49bc8156ae79cc6c15766963b719cbefe6cc0207de0c215090baace"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "bb3f51d8db7d088552f7fc4445a720f43ea83cccb422e22c05e232c07dc9094e"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "cf3fa0613bbc25f6d0c48820db76aa63d092495fc11839d04507fc406a019d24"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "d0994efd579329f186878872f4453999317edc66dc0d6b8cd862e33a067e482b"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "9f69048ff86ce2a20048c39719bb8bfd3351ea0fd7fcd5d9b13dda3e85b1aeae"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "3fbec3c61c98514c7bbde7e8a5d3f6ee7781ecac3eeb70d52b9cdce5f39e258f"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "65f5b44c38487c15988bc38391bef2ff3bc305a44b9f04fbcd0786079bf2409e"
+    },
+    {
+      "folder": "logs/short_reproducibility_v1/same_seed_3/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "95f1828846717503be50bc4eb3cd808ecec846088a3047f08d5a57b42715483a"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AB_gentle_R1",
+      "method": "gentle",
+      "commands": 440,
+      "samples_sha256": "0bede46675756ecde88d9ee74a035c0a39dbd772ad38f592e76bd8789b9185e3"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 442,
+      "samples_sha256": "070db4285391e2fe5e791eb92d2b6aaa8970fe6ed0bbfd6df61abb8e82667231"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 442,
+      "samples_sha256": "a7d95d093a497ad775266455eec134df5e90a40f3d83350f92d0a4cf42cf9345"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AC_gentle_R1",
+      "method": "gentle",
+      "commands": 467,
+      "samples_sha256": "c024ffb1c35f3d803d0c50683687cb84a7078bd98443a02b70e4baf4cb4c2941"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 470,
+      "samples_sha256": "f08dc46691ec7787c101681eec2e52f58a920339b4763b87e3dbfa58ed1aed34"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_mid_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 470,
+      "samples_sha256": "7b797e9b502803b189bdd9f430191b72c59607f315c6aaae7ee28d635de9b10d"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AB_gentle_R1",
+      "method": "gentle",
+      "commands": 439,
+      "samples_sha256": "2787fa51cf8ca0a81fb439ecb92e5195b6eb78dc094563b6e2dd696cc26e0101"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 439,
+      "samples_sha256": "5033049c1de89d6a617d434609e1e98177a208c90d4b7af6e54201ae4a84ac03"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 439,
+      "samples_sha256": "747e04c782bdbe6acdc70daf6ee057e202da6ba221f5b0691c8e289fa27d143a"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AC_gentle_R1",
+      "method": "gentle",
+      "commands": 461,
+      "samples_sha256": "8e59f18c17d4e778966dbbf667857d7064982ed940b58bb0ccc3ba713f1548f0"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 461,
+      "samples_sha256": "9aefd0693c3ce0c4ce5a9ddfa194c1c73f0dd59715d9d5ed43ba6b405b870f87"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_strong_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 461,
+      "samples_sha256": "27d6dfca2db275ce9c93bd5fe3dc103a03e199bfeda438f07e7b8058494b0e13"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AB_gentle_R1",
+      "method": "gentle",
+      "commands": 460,
+      "samples_sha256": "21f1e8526ff8161eb311028eda0e3a8e3927310d043821c4047f7fe073acdd09"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AB_memory_zero_R1",
+      "method": "zero",
+      "commands": 548,
+      "samples_sha256": "9e16f0c1080b8f1342fafbdf1ae3daa134b932c3d9f999ba4e98661b66410b2b"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AB_short_model_R1",
+      "method": "short_model",
+      "commands": 474,
+      "samples_sha256": "9767feafd91006fff8bdaf61c5650cca40d3c70fdf07816b63f020cba86a7515"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AC_gentle_R1",
+      "method": "gentle",
+      "commands": 505,
+      "samples_sha256": "9d3cb50d358f5d7691b361369e3e912bbbe2892407fc30a0a62b4d6a72aa73ba"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AC_memory_zero_R1",
+      "method": "zero",
+      "commands": 579,
+      "samples_sha256": "c8666e2ed3bb8a5b7e932148a56468efaff227151bdadb92240842c3a3a474b7"
+    },
+    {
+      "folder": "logs/experience_control_v1/experience_weak_AC_short_model_R1",
+      "method": "short_model",
+      "commands": 521,
+      "samples_sha256": "7e01a959b8a37f39dec032c0dd722f0bf94aa12d92faf7e36ab4d14c298704da"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/clarification_ac/run",
+      "method": "short_model",
+      "commands": 588,
+      "samples_sha256": "7ee7d45af850b7247bbd0ad6d83b8d832982b8ba87deaffe4c45ae5de58b2395"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/predictive_ab/run",
+      "method": "short_model",
+      "commands": 477,
+      "samples_sha256": "a4f01a97784f61f3b3215defde1eb48e812ba998ccbf9de4709c59e1d8280eb0"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/slippery_cb/run",
+      "method": "short_model",
+      "commands": 314,
+      "samples_sha256": "0997da8137a30c33adcf2633ab56c7797fbe228746960c37f59d670d65f9ff70"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/standard_ab/run",
+      "method": "short_model",
+      "commands": 488,
+      "samples_sha256": "1134410d5937b3e6064fae3548f7dd03999b7a2037060404f89f177831c81984"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/standard_ba/run",
+      "method": "short_model",
+      "commands": 488,
+      "samples_sha256": "96dbf2a805253b7cd8e2106508e4478b8dd6cf26f77915e233f34dc96e4d7169"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/time_bc/run",
+      "method": "short_model",
+      "commands": 293,
+      "samples_sha256": "2a0f86d26f34961141d437af0619457000442cebf92fa4ce6770d8b113c9ceaf"
+    },
+    {
+      "folder": "logs/language_short_integration_v1/time_ca/run",
+      "method": "short_model",
+      "commands": 479,
+      "samples_sha256": "2733d708f9f794ccf600636bca1aeac1894dcb5f1b57e39c5cba8bf54b485be0"
+    },
+    {
+      "folder": "logs/language_short_live_v1/mission/run",
+      "method": "short_model",
+      "commands": 515,
+      "samples_sha256": "59ef48df967f87473e3660b4ce5c7c8ec289cb33dbd5a85ad1e3567e3fa68741"
+    },
+    {
+      "folder": "logs/language_e2e_terminal_v1/run",
+      "method": "short_model",
+      "commands": 515,
+      "samples_sha256": "d6688c3e15dcb91b04f187e6ca1bf1bcd27020d584a73f969ae08e50941e5370"
+    }
+  ],
+  "model_sha256": "9c45577398441aea47cfa68e4fb04049f498fcaa1364206a30b65d304021b36e",
+  "limitation": "Replay of existing observations, not independent physical re-execution. Zero-control calibration is behaviorally equivalent under the <=4 mm restart gate; only short-model weights are retained."
+}

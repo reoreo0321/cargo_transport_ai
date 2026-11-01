@@ -1,0 +1,18 @@
+{
+  "stations": {
+    "A": {"label": "部品置き場", "aliases": ["A", "部品置き場", "部品置場", "部品保管場所", "部品の置き場", "部品を置くところ", "部品を置くとこ", "部品があるところ", "部品があるとこ", "倉庫", "受け取り場", "Parts storage"]},
+    "B": {"label": "組立場", "aliases": ["B", "組立場", "組み立て場", "組立作業台", "組立台", "組立ライン", "組み立てるところ", "組み立てるとこ", "組立するところ", "組立するとこ", "組み立てするところ", "組み立てするとこ", "作業台", "Assembly"]},
+    "C": {"label": "検査場", "aliases": ["C", "検査場", "検査室", "検査台", "検査作業台", "検査するところ", "検査するとこ", "検査をするところ", "検査をするとこ", "検品場", "検品するところ", "検品するとこ", "作業台", "Inspection"]}
+  },
+  "profiles": {
+    "careful": {"label": "慎重", "speed_mps": 0.45, "acceleration_mps2": 0.15},
+    "standard": {"label": "標準", "speed_mps": 0.55, "acceleration_mps2": 0.30},
+    "time_priority": {"label": "時間優先", "speed_mps": 0.65, "acceleration_mps2": 0.30}
+  },
+  "shape_defaults_m": {"box": [0.18, 0.16, 0.18], "tall_box": [0.15, 0.15, 0.24], "flat_box": [0.22, 0.18, 0.10], "unknown": [0.18, 0.16, 0.18]},
+  "simulation_scenarios": {
+    "standard": {"mu": 0.072, "mass_kg": 0.85, "com_z_fraction": 0.06},
+    "slippery": {"mu": 0.038, "mass_kg": 0.60, "com_z_fraction": 0.13},
+    "stable": {"mu": 0.12, "mass_kg": 1.0, "com_z_fraction": 0.05}
+  }
+}

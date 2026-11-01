@@ -1,0 +1,5 @@
+# ROS/Gazebo come from the pinned Docker image, not pip.
+# Install these only into .venv-learning (see README).
+numpy==1.24.4
+scipy==1.15.3
+scikit-learn==1.5.2

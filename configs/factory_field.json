@@ -1,0 +1,30 @@
+{
+  "name": "factory_parts_transport_v1",
+  "bounds_m": [0.0, 0.0, 12.0, 8.0],
+  "grid_resolution_m": 0.1,
+  "robot_radius_m": 0.39,
+  "safety_margin_m": 0.2,
+  "smoothing_reserve_m": 0.12,
+  "path_spacing_m": 0.05,
+  "stations": {
+    "A": {"position_m": [1.2, 1.3], "label": "Parts storage"},
+    "B": {"position_m": [10.6, 1.3], "label": "Assembly"},
+    "C": {"position_m": [10.6, 6.6], "label": "Inspection"}
+  },
+  "obstacles": [
+    {"id": "rack_lower", "label": "Parts rack 1", "bounds_m": [3.9, 0.5, 6.7, 2.8], "height_m": 1.1},
+    {"id": "rack_upper", "label": "Parts rack 2", "bounds_m": [3.2, 4.6, 6.9, 6.4], "height_m": 1.1},
+    {"id": "workcell", "label": "Work cell", "bounds_m": [8.6, 3.0, 9.8, 4.7], "height_m": 0.8}
+  ],
+  "controller": {
+    "cruise_speed_mps": 0.25,
+    "max_acceleration_mps2": 0.15,
+    "max_deceleration_mps2": 0.2,
+    "max_yaw_rate_rps": 0.6,
+    "max_yaw_acceleration_rps2": 0.6,
+    "max_lateral_acceleration_mps2": 0.12,
+    "lookahead_m": 0.45,
+    "goal_tolerance_m": 0.1,
+    "settle_s": 2.0
+  }
+}

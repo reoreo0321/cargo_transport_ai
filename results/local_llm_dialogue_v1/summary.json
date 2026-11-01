@@ -1,0 +1,93 @@
+{
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:3b",
+  "model_id": "357c53fb659c",
+  "ollama_version": "0.40.11",
+  "image_digest": "sha256:dea72d1e22270fe095b68fdf756d2b489d615643c5a2eaebbc5f569181e322d8",
+  "scope": "Development examples; end-to-end dialogue system with LLM, literal grounding, and state validation. Not standalone model accuracy or unseen-language validation.",
+  "expected_cases": 8,
+  "passed_cases": 8,
+  "turns": 13,
+  "first_turn_s": 118.225,
+  "subsequent_turns_median_s": 23.24,
+  "subsequent_turns_min_s": 7.793,
+  "subsequent_turns_max_s": 30.13,
+  "hardware": {
+    "host_ram_gib": 15.4,
+    "docker_memory_gib": 7.48,
+    "ollama_memory_limit_gib": 6,
+    "processor": "CPU; Intel integrated GPU not used"
+  },
+  "unit_tests": {
+    "passed": 118,
+    "failed": 0
+  },
+  "plan_only_smoke": "logs/local_model_cli_final",
+  "validation": "validation.json",
+  "source_sha256": {
+    "scripts/check_live_language.py": "86ee4034544ab3d116f676235b4f3a77edf693b389693993f0ffa8cbd22dce8d",
+    "scripts/mission_dialogue.py": "a19e89dc690a08510e10f52da9acc061cf539b8f7ac3dc6276791fe48059354e",
+    "scripts/mission_language_backend.py": "deddbe53ebd391fca9071906c78afd5f4d121040c7b8ad67499e394d3389e2c3",
+    "scripts/mission_ollama_backend.py": "96e3b38fed3c11c9f84716db07a3be5e3565f9366f82953efdf2416433d2721e",
+    "scripts/run_language_mission.py": "3a80acef3063784f4b1442e5966737140aff0f3484a17b535da3522c4c8b3373",
+    "configs/mission_language.json": "794ee9f5e6bd4cbbfa26697eba614bddc8455344ead1cd6d3daa44f9bb8965e6",
+    "examples/missions/live_language_cases.json": "24be1da0cf59cfb5fc3df5bda2b9ed9c32823356460a115a27e9bdbf41763d2a"
+  },
+  "notes": [
+    "No paid API or cloud fallback used.",
+    "Explicit model was used in the evaluation; only the default model and setup help were subsequently updated.",
+    "Inference source snapshot is preserved in logs/local_model_eval_v7/source.",
+    "Gazebo was not run in this language-only validation; CLI plan-only generated A-to-C route and world."
+  ],
+  "cases": [
+    {
+      "id": "complete_sentence",
+      "passed": true,
+      "turns": 1,
+      "failures": []
+    },
+    {
+      "id": "reported_colloquial_phrase",
+      "passed": true,
+      "turns": 1,
+      "failures": []
+    },
+    {
+      "id": "unlisted_cargo_paraphrase",
+      "passed": true,
+      "turns": 1,
+      "failures": []
+    },
+    {
+      "id": "missing_only_and_retention",
+      "passed": true,
+      "turns": 2,
+      "failures": []
+    },
+    {
+      "id": "unknown_shape_only",
+      "passed": true,
+      "turns": 2,
+      "failures": []
+    },
+    {
+      "id": "ambiguous_station",
+      "passed": true,
+      "turns": 2,
+      "failures": []
+    },
+    {
+      "id": "correction_preserves_other_fields",
+      "passed": true,
+      "turns": 2,
+      "failures": []
+    },
+    {
+      "id": "conflicting_priorities",
+      "passed": true,
+      "turns": 2,
+      "failures": []
+    }
+  ]
+}

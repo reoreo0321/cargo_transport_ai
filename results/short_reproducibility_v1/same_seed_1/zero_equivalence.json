@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "episodes": 6,
+  "commands_replayed_with_short_calibration": 2939,
+  "candidate_checks": 108,
+  "max_group_margins_mm": {
+    "short": 0.019278699227897017,
+    "memory": 0.02892234437530473
+  },
+  "proof": "Restart eligibility requires measured offset <=4 mm. Both calibrations have every group margin <1 mm. With zero mean, all identical candidates are feasible and rank only by identical end speed. Other guards, observations and memory updates are identical. Therefore both zero-mean policies choose identical commands for the study; verified by replay of every zero-control trace.",
+  "no_additional_physical_runs_claimed": true,
+  "source_sha256": "f4c5c74dc5478e097434a2afac22854c1fc79b6fa6da24e9921582276c0fb436",
+  "caveat": "Equivalence is specific to these margins and the current <=4 mm restart gate. Does not establish safety or equivalence of nonzero predictors."
+}

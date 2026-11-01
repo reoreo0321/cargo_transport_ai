@@ -1,0 +1,47 @@
+[
+  {
+    "case": "standard_ab",
+    "backend": "rules",
+    "status": "goal_reached",
+    "returncode": 0,
+    "safe_arrival": true,
+    "time_s": 26.35,
+    "max_slip_mm": 0.4658886482740234,
+    "model_decisions": 0,
+    "commands_replayed": 488,
+    "turns": 1,
+    "contacts": 0,
+    "lcp_errors": 0,
+    "samples_sha256": "b66b13db883e8d9fb5eb69594e9a43ad4531261ff919e83dcc9d42c4f02f99e5"
+  },
+  {
+    "case": "clarification_ac",
+    "backend": "rules",
+    "status": "goal_reached",
+    "returncode": 0,
+    "safe_arrival": true,
+    "time_s": 31.35,
+    "max_slip_mm": 0.304570552793554,
+    "model_decisions": 0,
+    "commands_replayed": 588,
+    "turns": 2,
+    "contacts": 0,
+    "lcp_errors": 0,
+    "samples_sha256": "cdda36ca79e14513c7789ae9f429d02e335d62e6da3962e1eb80d278eace4c35"
+  },
+  {
+    "case": "predictive_ab",
+    "backend": "rules",
+    "status": "goal_reached",
+    "returncode": 0,
+    "safe_arrival": true,
+    "time_s": 25.8,
+    "max_slip_mm": 3.0776905407401163,
+    "model_decisions": 15,
+    "commands_replayed": 477,
+    "turns": 1,
+    "contacts": 0,
+    "lcp_errors": 0,
+    "samples_sha256": "91b779cfb51280ed427796757ffea88b6bc7943aae33b45b1d208bb233ccf50c"
+  }
+]

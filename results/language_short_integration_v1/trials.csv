@@ -1,0 +1,8 @@
+case,route,profile,dialogue_turns,status,max_slip_mm,time_s,safe_arrival,model_used,model_decisions,samples_sha256
+standard_ab,A->B,standard,1,goal_reached,0.4658886482740234,26.35,True,False,0,1134410d5937b3e6064fae3548f7dd03999b7a2037060404f89f177831c81984
+clarification_ac,A->C,careful,5,goal_reached,0.30059441085160965,31.35,True,False,0,7ee7d45af850b7247bbd0ad6d83b8d832982b8ba87deaffe4c45ae5de58b2395
+standard_ba,B->A,standard,1,goal_reached,0.4176147296299013,26.35,True,True,2,96dbf2a805253b7cd8e2106508e4478b8dd6cf26f77915e233f34dc96e4d7169
+time_bc,B->C,time_priority,1,goal_reached,0.6399508291881281,16.6,True,True,10,2a0f86d26f34961141d437af0619457000442cebf92fa4ce6770d8b113c9ceaf
+time_ca,C->A,time_priority,1,goal_reached,0.6754529742112239,25.9,True,True,10,2733d708f9f794ccf600636bca1aeac1894dcb5f1b57e39c5cba8bf54b485be0
+slippery_cb,C->B,careful,1,goal_reached,1.0266910109894474,17.65,True,False,0,0997da8137a30c33adcf2633ab56c7797fbe228746960c37f59d670d65f9ff70
+predictive_ab,A->B,time_priority,1,goal_reached,3.2352000136997705,25.8,True,True,15,a4f01a97784f61f3b3215defde1eb48e812ba998ccbf9de4709c59e1d8280eb0

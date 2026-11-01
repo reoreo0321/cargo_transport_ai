@@ -1,0 +1,990 @@
+{
+  "status": "completed",
+  "backend": "ollama",
+  "model": "qwen2.5:3b",
+  "started_at": "2026-10-27T15:08:29.048877+00:00",
+  "expected_cases": 8,
+  "planned_api_requests": 13,
+  "cases": [
+    {
+      "id": "complete_sentence",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "部品置き場から検査場まで背の高い工具箱を慎重に運んで",
+          "elapsed_s": 118.225,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "背の高い工具箱",
+              "handling": "careful",
+              "shape": "tall_box"
+            },
+            "evidence": {
+              "start": "部品置き場",
+              "goal": "検査場",
+              "cargo_description": "背の高い工具箱",
+              "handling": "慎重",
+              "shape": "背の高い"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "背の高い工具箱",
+            "handling": "careful",
+            "shape": "tall_box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 118098403876,
+            "load_duration": 64953478641,
+            "prompt_eval_count": 970,
+            "prompt_eval_duration": 38667031000,
+            "eval_count": 75,
+            "eval_duration": 14334438000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "背の高い工具箱",
+                "handling": "careful",
+                "shape": "tall_box"
+              },
+              "evidence": {
+                "start": "部品置き場",
+                "goal": "検査場",
+                "cargo_description": "背の高い工具箱",
+                "handling": "慎重",
+                "shape": "背の高い"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "reported_colloquial_phrase",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "部品置き場から検査するとこまで背の高い精密機器を慎重に運んで",
+          "elapsed_s": 18.06,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "背の高い精密機器",
+              "handling": "careful",
+              "shape": "tall_box"
+            },
+            "evidence": {
+              "start": "部品置き場",
+              "goal": "検査するとこ",
+              "cargo_description": "背の高い精密機器",
+              "handling": "慎重",
+              "shape": "部品置き場から検査するとこまで背の高い精密機器を慎重に運んで"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "背の高い精密機器",
+            "handling": "careful",
+            "shape": "tall_box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 18040256438,
+            "load_duration": 16875816,
+            "prompt_eval_count": 972,
+            "prompt_eval_duration": 1302276000,
+            "eval_count": 123,
+            "eval_duration": 16678992999,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "背の高い精密機器",
+                "handling": "careful",
+                "shape": "tall_box"
+              },
+              "evidence": {
+                "start": "部品置き場",
+                "goal": "検査場",
+                "cargo_description": "背の高い精密機器",
+                "handling": "慎重",
+                "shape": "背の高い/縦長"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "goal:literal_map_alias",
+              "shape:explicit_literal_evidence"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlisted_cargo_paraphrase",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "倉庫にある試験管ラックを検品するところへ届けてほしい。背が高い形で、丁寧にお願い。",
+          "elapsed_s": 11.97,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "試験管ラック",
+              "handling": "careful",
+              "shape": "tall_box"
+            },
+            "evidence": {
+              "start": "倉庫",
+              "goal": "検品するところ",
+              "cargo_description": "試験管ラック",
+              "handling": "丁寧",
+              "shape": "倉庫にある試験管ラックを検品するところへ届けてほしい。背が高い形で、丁寧にお願い。"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "試験管ラック",
+            "handling": "careful",
+            "shape": "tall_box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 11957950705,
+            "load_duration": 6631510,
+            "prompt_eval_count": 980,
+            "prompt_eval_duration": 3185109000,
+            "eval_count": 76,
+            "eval_duration": 8680173000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "試験管ラック",
+                "handling": "careful",
+                "shape": "tall_box"
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "検査場",
+                "cargo_description": "試験管ラック",
+                "handling": "丁寧",
+                "shape": "背の高い"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "goal:literal_map_alias",
+              "shape:explicit_literal_evidence"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "missing_only_and_retention",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "検査するとこまで工具箱を運んで",
+          "elapsed_s": 7.793,
+          "extracted": {
+            "slots": {
+              "start": null,
+              "goal": "C",
+              "cargo_description": "工具箱",
+              "handling": null,
+              "shape": "box"
+            },
+            "evidence": {
+              "start": null,
+              "goal": "検査するとこ",
+              "cargo_description": "工具箱",
+              "handling": null,
+              "shape": "検査するとこまで工具箱を運んで"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": null,
+            "goal": "C",
+            "cargo_description": "工具箱",
+            "handling": null,
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [
+            {
+              "fields": [
+                "start",
+                "handling"
+              ],
+              "text": "不足・確認が必要な項目だけ教えてください。 出発地を教えてください。A＝部品置き場、B＝組立場、C＝検査場です。 運搬方針は「慎重」「標準」「時間優先」のどれですか？「おまかせ」は慎重にします。"
+            }
+          ],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 7774569493,
+            "load_duration": 11019280,
+            "prompt_eval_count": 960,
+            "prompt_eval_duration": 784527000,
+            "eval_count": 61,
+            "eval_duration": 6933783000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "工具箱",
+                "handling": "standard",
+                "shape": null
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "検査場",
+                "cargo_description": "工具箱",
+                "handling": "標準",
+                "shape": null
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "shape:explicit_literal",
+              "start:ungrounded_proposal_ignored",
+              "goal:literal_map_alias",
+              "handling:ungrounded_proposal_ignored"
+            ]
+          }
+        },
+        {
+          "text": "部品置き場から、いつもどおりで",
+          "elapsed_s": 22.352,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": null,
+              "cargo_description": null,
+              "handling": "standard",
+              "shape": null
+            },
+            "evidence": {
+              "start": "部品置き場",
+              "goal": null,
+              "cargo_description": null,
+              "handling": "部品置き場から、いつもどおりで",
+              "shape": null
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "工具箱",
+            "handling": "standard",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 22343354848,
+            "load_duration": 4121503,
+            "prompt_eval_count": 983,
+            "prompt_eval_duration": 13559550000,
+            "eval_count": 86,
+            "eval_duration": 8747522000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "B",
+                "cargo_description": "工具箱",
+                "handling": "standard",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": "部品置き場",
+                "goal": "組立場",
+                "cargo_description": "工具箱",
+                "handling": "普通に",
+                "shape": "工具箱"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "goal:ungrounded_proposal_ignored",
+              "cargo_description:unchanged_state_retained",
+              "handling:explicit_literal_evidence",
+              "shape:unchanged_state_retained"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown_shape_only",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "AからCまで顕微鏡を慎重に届けて",
+          "elapsed_s": 25.403,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "顕微鏡",
+              "handling": "careful",
+              "shape": null
+            },
+            "evidence": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "顕微鏡",
+              "handling": "慎重",
+              "shape": null
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "顕微鏡",
+            "handling": "careful",
+            "shape": null,
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [
+            {
+              "fields": [
+                "shape"
+              ],
+              "text": "不足・確認が必要な項目だけ教えてください。 形状を教えてください。例：普通の箱、背の高い箱、平たい箱、円筒形、不明。"
+            }
+          ],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 25394269043,
+            "load_duration": 10437092,
+            "prompt_eval_count": 961,
+            "prompt_eval_duration": 13349664000,
+            "eval_count": 60,
+            "eval_duration": 12004797000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "顕微鏡",
+                "handling": "careful",
+                "shape": null
+              },
+              "evidence": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "顕微鏡",
+                "handling": "慎重",
+                "shape": null
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": []
+          }
+        },
+        {
+          "text": "背の高い箱として扱って",
+          "elapsed_s": 26.989,
+          "extracted": {
+            "slots": {
+              "start": null,
+              "goal": null,
+              "cargo_description": null,
+              "handling": null,
+              "shape": "tall_box"
+            },
+            "evidence": {
+              "start": null,
+              "goal": null,
+              "cargo_description": null,
+              "handling": null,
+              "shape": "背の高い"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "顕微鏡",
+            "handling": "careful",
+            "shape": "tall_box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 26979893508,
+            "load_duration": 5333454,
+            "prompt_eval_count": 986,
+            "prompt_eval_duration": 16029801000,
+            "eval_count": 73,
+            "eval_duration": 10848421000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "不明な荷物",
+                "handling": "careful",
+                "shape": "tall_box"
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "検査場",
+                "cargo_description": "不明な荷物",
+                "handling": "丁寧",
+                "shape": "背の高い"
+              },
+              "ambiguous_fields": [
+                "shape"
+              ]
+            },
+            "normalizations": [
+              "shape:explicit_declaration_resolves_ambiguity",
+              "start:unchanged_state_retained",
+              "goal:unchanged_state_retained",
+              "cargo_description:ungrounded_proposal_ignored",
+              "handling:unchanged_state_retained"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_station",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "倉庫から作業台まで工具箱を普通に運んで",
+          "elapsed_s": 18.341,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": null,
+              "cargo_description": "工具箱",
+              "handling": "standard",
+              "shape": "box"
+            },
+            "evidence": {
+              "start": "倉庫",
+              "goal": null,
+              "cargo_description": "工具箱",
+              "handling": "普通に",
+              "shape": "工具箱"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": null,
+            "cargo_description": "工具箱",
+            "handling": "standard",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [
+            {
+              "fields": [
+                "goal"
+              ],
+              "text": "不足・確認が必要な項目だけ教えてください。 目的地を教えてください。A＝部品置き場、B＝組立場、C＝検査場です。"
+            }
+          ],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 18330566149,
+            "load_duration": 6528664,
+            "prompt_eval_count": 963,
+            "prompt_eval_duration": 12998426000,
+            "eval_count": 61,
+            "eval_duration": 5288849000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "B",
+                "cargo_description": "工具箱",
+                "handling": "standard",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "作業台",
+                "cargo_description": "工具箱",
+                "handling": "普通に",
+                "shape": "工具箱"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "goal:ungrounded_proposal_ignored"
+            ]
+          }
+        },
+        {
+          "text": "Cの検査するところ",
+          "elapsed_s": 24.527,
+          "extracted": {
+            "slots": {
+              "start": null,
+              "goal": "C",
+              "cargo_description": null,
+              "handling": null,
+              "shape": null
+            },
+            "evidence": {
+              "start": null,
+              "goal": "検査するところ",
+              "cargo_description": null,
+              "handling": null,
+              "shape": null
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "工具箱",
+            "handling": "standard",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 24520383688,
+            "load_duration": 4049925,
+            "prompt_eval_count": 983,
+            "prompt_eval_duration": 16226427000,
+            "eval_count": 77,
+            "eval_duration": 8264870000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": null,
+                "goal": "C",
+                "cargo_description": "工具箱",
+                "handling": "standard",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": null,
+                "goal": "C",
+                "cargo_description": "工具箱",
+                "handling": "標準",
+                "shape": "工具箱"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "goal:literal_map_alias",
+              "cargo_description:unchanged_state_retained",
+              "handling:unchanged_state_retained",
+              "shape:unchanged_state_retained"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "correction_preserves_other_fields",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "AからBへ工具箱を標準で運んで",
+          "elapsed_s": 26.084,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "B",
+              "cargo_description": "工具箱",
+              "handling": "standard",
+              "shape": "box"
+            },
+            "evidence": {
+              "start": "A",
+              "goal": "B",
+              "cargo_description": "工具箱",
+              "handling": "標準",
+              "shape": "AからBへ工具箱を標準で運んで"
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "B",
+            "cargo_description": "工具箱",
+            "handling": "standard",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 26070230575,
+            "load_duration": 8930377,
+            "prompt_eval_count": 959,
+            "prompt_eval_duration": 15346175000,
+            "eval_count": 55,
+            "eval_duration": 10689066000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "B",
+                "cargo_description": "工具箱",
+                "handling": "standard",
+                "shape": null
+              },
+              "evidence": {
+                "start": "A",
+                "goal": "B",
+                "cargo_description": "工具箱",
+                "handling": "標準",
+                "shape": null
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "shape:explicit_literal"
+            ]
+          }
+        },
+        {
+          "text": "やっぱり届け先はCにして。慎重じゃなく時間優先で。",
+          "elapsed_s": 30.13,
+          "extracted": {
+            "slots": {
+              "start": null,
+              "goal": "C",
+              "cargo_description": null,
+              "handling": "time_priority",
+              "shape": null
+            },
+            "evidence": {
+              "start": null,
+              "goal": "C",
+              "cargo_description": null,
+              "handling": "じゃなく時間優先",
+              "shape": null
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "工具箱",
+            "handling": "time_priority",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 30049153518,
+            "load_duration": 44769238,
+            "prompt_eval_count": 995,
+            "prompt_eval_duration": 16832562999,
+            "eval_count": 66,
+            "eval_duration": 13150178000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "工具箱",
+                "handling": "time_priority",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "検査場",
+                "cargo_description": "工具箱",
+                "handling": "時間優先",
+                "shape": "工具箱"
+              },
+              "ambiguous_fields": [
+                "handling"
+              ]
+            },
+            "normalizations": [
+              "handling:explicit_negation_correction",
+              "start:unchanged_state_retained",
+              "goal:literal_map_alias",
+              "cargo_description:unchanged_state_retained",
+              "shape:unchanged_state_retained"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "conflicting_priorities",
+      "passed": true,
+      "failures": [],
+      "turns": [
+        {
+          "text": "AからCへ箱を慎重に、でも急いで運んで。どちらを優先するかはまだ決めていない。",
+          "elapsed_s": 24.127,
+          "extracted": {
+            "slots": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "箱",
+              "handling": null,
+              "shape": "box"
+            },
+            "evidence": {
+              "start": "A",
+              "goal": "C",
+              "cargo_description": "箱",
+              "handling": "慎重",
+              "shape": "箱"
+            },
+            "ambiguous_fields": [
+              "handling"
+            ]
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "箱",
+            "handling": null,
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [
+            {
+              "fields": [
+                "handling"
+              ],
+              "text": "不足・確認が必要な項目だけ教えてください。 複数の解釈があるため、希望を確認してください 運搬方針は「慎重」「標準」「時間優先」のどれですか？「おまかせ」は慎重にします。"
+            }
+          ],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 24116119582,
+            "load_duration": 3404099,
+            "prompt_eval_count": 975,
+            "prompt_eval_duration": 14986309000,
+            "eval_count": 54,
+            "eval_duration": 9112114000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "箱",
+                "handling": "unknown",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "箱",
+                "handling": "慎重",
+                "shape": "箱"
+              },
+              "ambiguous_fields": [
+                "handling"
+              ]
+            },
+            "normalizations": [
+              "handling:unreported_unknown_ignored"
+            ]
+          }
+        },
+        {
+          "text": "慎重さを優先して",
+          "elapsed_s": 20.067,
+          "extracted": {
+            "slots": {
+              "start": null,
+              "goal": null,
+              "cargo_description": null,
+              "handling": "careful",
+              "shape": null
+            },
+            "evidence": {
+              "start": null,
+              "goal": null,
+              "cargo_description": null,
+              "handling": "慎重さを優先して",
+              "shape": null
+            },
+            "ambiguous_fields": []
+          },
+          "slots": {
+            "start": "A",
+            "goal": "C",
+            "cargo_description": "箱",
+            "handling": "careful",
+            "shape": "box",
+            "dimensions_m": null,
+            "mass_kg": null,
+            "fragility": null,
+            "slippery": null,
+            "secured": null,
+            "box_approximation": null
+          },
+          "questions": [],
+          "failures": [],
+          "inference_metadata": {
+            "model": "qwen2.5:3b",
+            "total_duration": 20018118025,
+            "load_duration": 7721133,
+            "prompt_eval_count": 980,
+            "prompt_eval_duration": 15005005000,
+            "eval_count": 61,
+            "eval_duration": 4988676000,
+            "optional_fields_from_rules": [],
+            "raw_primary_patch": {
+              "slots": {
+                "start": "A",
+                "goal": "C",
+                "cargo_description": "箱",
+                "handling": "careful",
+                "shape": "box"
+              },
+              "evidence": {
+                "start": "倉庫",
+                "goal": "検査場",
+                "cargo_description": "箱",
+                "handling": "丁寧",
+                "shape": "箱"
+              },
+              "ambiguous_fields": []
+            },
+            "normalizations": [
+              "start:unchanged_state_retained",
+              "goal:unchanged_state_retained",
+              "cargo_description:unchanged_state_retained",
+              "handling:explicit_literal_evidence",
+              "shape:unchanged_state_retained"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "scripts/check_live_language.py": "86ee4034544ab3d116f676235b4f3a77edf693b389693993f0ffa8cbd22dce8d",
+    "scripts/mission_dialogue.py": "a19e89dc690a08510e10f52da9acc061cf539b8f7ac3dc6276791fe48059354e",
+    "scripts/mission_language_backend.py": "deddbe53ebd391fca9071906c78afd5f4d121040c7b8ad67499e394d3389e2c3",
+    "scripts/mission_ollama_backend.py": "96e3b38fed3c11c9f84716db07a3be5e3565f9366f82953efdf2416433d2721e",
+    "scripts/run_language_mission.py": "3a80acef3063784f4b1442e5966737140aff0f3484a17b535da3522c4c8b3373",
+    "configs/mission_language.json": "794ee9f5e6bd4cbbfa26697eba614bddc8455344ead1cd6d3daa44f9bb8965e6",
+    "examples/missions/live_language_cases.json": "24be1da0cf59cfb5fc3df5bda2b9ed9c32823356460a115a27e9bdbf41763d2a"
+  },
+  "passed_cases": 8
+}

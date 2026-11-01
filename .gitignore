@@ -1,0 +1,32 @@
+# Generated experiment data; representative summaries live in results/.
+/logs/
+/data/raw/
+
+# Python environments and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Credentials and local machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.vscode/
+.idea/
+
+# Raw ROS recordings, downloads and course handouts
+*.bag
+*.db3
+*.mcap
+*.zip
+*.pdf
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini

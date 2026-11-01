@@ -1,0 +1,222 @@
+[
+  {
+    "id": "complete_sentence",
+    "turns": [
+      {
+        "text": "部品置き場から検査場まで背の高い工具箱を慎重に運んで",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "shape": "tall_box",
+          "handling": "careful"
+        },
+        "questions": [],
+        "must_be_unset": [
+          "dimensions_m",
+          "mass_kg",
+          "fragility",
+          "slippery",
+          "secured"
+        ],
+        "profile": "careful",
+        "cargo_contains": "工具箱"
+      }
+    ]
+  },
+  {
+    "id": "reported_colloquial_phrase",
+    "turns": [
+      {
+        "text": "部品置き場から検査するとこまで背の高い精密機器を慎重に運んで",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "shape": "tall_box",
+          "handling": "careful"
+        },
+        "questions": [],
+        "must_be_unset": [
+          "mass_kg",
+          "slippery",
+          "fragility"
+        ],
+        "cargo_contains": "精密機器"
+      }
+    ]
+  },
+  {
+    "id": "unlisted_cargo_paraphrase",
+    "turns": [
+      {
+        "text": "倉庫にある試験管ラックを検品するところへ届けてほしい。背が高い形で、丁寧にお願い。",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "shape": "tall_box",
+          "handling": "careful"
+        },
+        "questions": [],
+        "must_be_unset": [
+          "mass_kg",
+          "slippery",
+          "fragility"
+        ],
+        "cargo_contains": "試験管ラック"
+      }
+    ]
+  },
+  {
+    "id": "missing_only_and_retention",
+    "turns": [
+      {
+        "text": "検査するとこまで工具箱を運んで",
+        "slots": {
+          "goal": "C",
+          "start": null,
+          "handling": null,
+          "shape": "box"
+        },
+        "questions": [
+          "start",
+          "handling"
+        ],
+        "must_be_unset": [
+          "mass_kg",
+          "slippery",
+          "fragility",
+          "dimensions_m",
+          "secured"
+        ],
+        "cargo_contains": "工具箱"
+      },
+      {
+        "text": "部品置き場から、いつもどおりで",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "handling": "standard",
+          "shape": "box"
+        },
+        "questions": [],
+        "profile": "standard",
+        "cargo_contains": "工具箱"
+      }
+    ]
+  },
+  {
+    "id": "unknown_shape_only",
+    "turns": [
+      {
+        "text": "AからCまで顕微鏡を慎重に届けて",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "handling": "careful",
+          "shape": null
+        },
+        "questions": [
+          "shape"
+        ],
+        "must_be_unset": [
+          "fragility",
+          "slippery",
+          "mass_kg"
+        ],
+        "cargo_contains": "顕微鏡"
+      },
+      {
+        "text": "背の高い箱として扱って",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "shape": "tall_box"
+        },
+        "questions": [],
+        "cargo_contains": "顕微鏡"
+      }
+    ]
+  },
+  {
+    "id": "ambiguous_station",
+    "turns": [
+      {
+        "text": "倉庫から作業台まで工具箱を普通に運んで",
+        "slots": {
+          "start": "A",
+          "goal": null,
+          "handling": "standard",
+          "shape": "box"
+        },
+        "questions": [
+          "goal"
+        ],
+        "cargo_contains": "工具箱"
+      },
+      {
+        "text": "Cの検査するところ",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "handling": "standard"
+        },
+        "questions": [],
+        "cargo_contains": "工具箱"
+      }
+    ]
+  },
+  {
+    "id": "correction_preserves_other_fields",
+    "turns": [
+      {
+        "text": "AからBへ工具箱を標準で運んで",
+        "slots": {
+          "start": "A",
+          "goal": "B",
+          "handling": "standard",
+          "shape": "box"
+        },
+        "questions": [],
+        "cargo_contains": "工具箱"
+      },
+      {
+        "text": "やっぱり届け先はCにして。慎重じゃなく時間優先で。",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "handling": "time_priority",
+          "shape": "box"
+        },
+        "questions": [],
+        "profile": "time_priority",
+        "cargo_contains": "工具箱"
+      }
+    ]
+  },
+  {
+    "id": "conflicting_priorities",
+    "turns": [
+      {
+        "text": "AからCへ箱を慎重に、でも急いで運んで。どちらを優先するかはまだ決めていない。",
+        "slots": {
+          "start": "A",
+          "goal": "C",
+          "handling": null,
+          "shape": "box"
+        },
+        "questions": [
+          "handling"
+        ],
+        "cargo_contains": "箱"
+      },
+      {
+        "text": "慎重さを優先して",
+        "slots": {
+          "handling": "careful"
+        },
+        "questions": [],
+        "profile": "careful",
+        "cargo_contains": "箱"
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "status": "ready",
+  "input": "部ヒ部品置き場から検査するところまで背の高い精密機器をできるだけ慎重に",
+  "backend": "ollama",
+  "model": "qwen2.5:3b",
+  "route": [
+    "A",
+    "C"
+  ],
+  "profile": "careful",
+  "followup_questions": 0,
+  "cli_observed_s": 179.6,
+  "unit_tests_passed": 125,
+  "gazebo_started": false,
+  "log": "logs/local_model_reported_input_v2",
+  "notes": [
+    "CLI now displays progress every 10 seconds and saves cancellation.",
+    "Explicit careful handling is not repeatedly queried when the model and input agree.",
+    "Previous eight real conversations were replayed through the updated postprocessor; the real eight-case inference batch was not rerun.",
+    "Cold model load time remains variable; use_mmap is enabled."
+  ]
+}

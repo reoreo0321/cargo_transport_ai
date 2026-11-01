@@ -1,0 +1,97 @@
+{
+  "train_windows": 6096,
+  "calibration_windows": 246,
+  "train_conditions": 6,
+  "calibration_conditions": 2,
+  "feature_count": 44,
+  "portable_max_error": 5.551115123125783e-17,
+  "reference_short_variant_identical": false,
+  "reference_trees_identical": true,
+  "max_reference_calibration_difference": 1.3877787807814457e-17,
+  "reference_equivalent": true,
+  "calibration_mae_mm": 0.04153183590683965,
+  "cross_validation": [
+    {
+      "held_signature": [
+        0.035,
+        0.45,
+        0.15,
+        0.15,
+        0.24,
+        0.14
+      ],
+      "windows": 730,
+      "mae_mm": 0.06346852658177667,
+      "zero_mae_mm": 0.07423856541395535
+    },
+    {
+      "held_signature": [
+        0.043,
+        0.65,
+        0.168,
+        0.158,
+        0.218,
+        0.115
+      ],
+      "windows": 1208,
+      "mae_mm": 0.018557821055476084,
+      "zero_mae_mm": 0.014442762502966083
+    },
+    {
+      "held_signature": [
+        0.055,
+        0.85,
+        0.18,
+        0.16,
+        0.16,
+        0.06
+      ],
+      "windows": 1234,
+      "mae_mm": 0.03271422897510852,
+      "zero_mae_mm": 0.023838468990042442
+    },
+    {
+      "held_signature": [
+        0.07,
+        0.75,
+        0.17,
+        0.16,
+        0.17,
+        0.1
+      ],
+      "windows": 1234,
+      "mae_mm": 0.0190760609665974,
+      "zero_mae_mm": 0.013815730010403857
+    },
+    {
+      "held_signature": [
+        0.077,
+        0.92,
+        0.178,
+        0.168,
+        0.185,
+        0.075
+      ],
+      "windows": 1005,
+      "mae_mm": 0.009384011386120425,
+      "zero_mae_mm": 0.00644880826245914
+    },
+    {
+      "held_signature": [
+        0.135,
+        1.02,
+        0.183,
+        0.173,
+        0.158,
+        0.04
+      ],
+      "windows": 685,
+      "mae_mm": 0.012869798588605388,
+      "zero_mae_mm": 0.0013157362841173237
+    }
+  ],
+  "model_sha256": "43016aed9206ff9147b4c7fbf6932f2577f7840e4e6f5a69488b19a68fa63d6c",
+  "data_sha256": "3852d5e841dcd85308c1bf6046d6884ce4a724e997b180682810176be9a824dd",
+  "source_sha256": "75481ac0cddd5df2b21f9194144fc053a08f59fcb614d1d1fee61da289771ff5",
+  "limitation": "Evaluation cargos are excluded. No online weight updates, parameter search, real-time or safety guarantee."
+}
